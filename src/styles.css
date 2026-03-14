@@ -1,0 +1,39 @@
+/* Basic Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+
+body { display: flex; flex-direction: column; min-height: 100vh; background-color: #f9f9f9; }
+
+.container { max-width: 900px; margin: 20px auto; padding: 20px; flex: 1; }
+
+/* Header & Cover Image */
+.cover-container { width: 100%; height: 250px; overflow: hidden; }
+.cover-container img { width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+
+/* Navigation & Hamburger */
+.navbar { background-color: #a83232; padding: 15px; position: relative; }
+.nav-links { list-style: none; display: flex; justify-content: center; gap: 20px; transition: 0.3s; }
+.nav-links li a { color: white; text-decoration: none; font-weight: bold; }
+
+.hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; }
+.hamburger span { width: 25px; height: 3px; background-color: white; }
+
+/* Responsive Hamburger */
+@media (max-width: 768px) {
+    .nav-links { display: none; flex-direction: column; background: #a83232; width: 100%; position: absolute; top: 100%; left: 0; padding: 10px 0; text-align: center; }
+    .nav-links.active { display: flex; }
+    .hamburger { display: flex; }
+}
+
+/* Timeline Formatting */
+.timeline { border-left: 4px solid #a83232; padding-left: 20px; margin-top: 20px; }
+.timeline-item { margin-bottom: 30px; position: relative; }
+.timeline-item h3 { color: #a83232; margin-bottom: 10px; }
+.timeline-item img { width: 100%; max-width: 400px; margin-top: 15px; border-radius: 8px; cursor: pointer; }
+
+/* Modal (Popup) Styles */
+.modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); }
+.modal-content { margin: auto; display: block; max-width: 80%; max-height: 80%; margin-top: 5%; }
+.close-modal { position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer; }
+
+/* Footer */
+footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: auto; }
