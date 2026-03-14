@@ -1,52 +1,217 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bác Hồ và Nhật ký trong tù</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="header-placeholder"></div>
-
-    <main class="container">
-        <h1>Giới thiệu: Nhật ký trong tù (1942-1943)</h1>
-        
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Hoàn cảnh sáng tác</h3>
-                <p>Tập thơ ra đời trong thời gian Bác bị giam giữ tại nhà tù Tưởng Giới Thạch (1942-1943). Đây là giai đoạn vô cùng gian khổ nhưng rực sáng ý chí kiên cường.</p>
-                <img src="https://phunuvietnam.mediacdn.vn/thumb_w/1098/179072216278405120/2021/2/5/anhhcm-16125276560891883717156-39-0-352-500-crop-16125278924161225007805.jpg" alt="Hoàn cảnh" class="zoomable-img">
-            </div>
-
-            <div class="timeline-item">
-                <h3>Giá trị nội dung</h3>
-                <p>Tinh thần lạc quan, ý chí kiên cường thép đúc, cùng tình yêu thiên nhiên và con người tha thiết của người chiến sĩ cộng sản.</p>
-                <img src="image2.jpg" alt="Nội dung" class="zoomable-img">
-            </div>
-
-            <div class="timeline-item">
-                <h3>Giá trị nghệ thuật</h3>
-                <p>Được viết bằng thơ chữ Hán, phong cách giản dị mà sâu sắc, kết hợp hài hòa giữa chất cổ điển và tinh thần thời đại.</p>
-                <img src="image3.jpg" alt="Nghệ thuật" class="zoomable-img">
-            </div>
-            
-            <div class="timeline-item">
-                <img src="image4.jpg" alt="Minh họa 4" class="zoomable-img">
-            </div>
-            <div class="timeline-item">
-                <img src="image5.jpg" alt="Minh họa 5" class="zoomable-img">
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Ho Chi Minh Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <header class="site-header">
+      <div class="site-shell site-header-shell">
+        <div class="brand-mark" aria-label="The Ho Chi Minh Archive home">
+          <span class="brand-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M4 7.5h8l3.5 3.5H20v6H9.5L6 13.5H4z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M7.2 8.8l4.3 4.3"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <span class="brand-text">The Ho Chi Minh Archive</span>
         </div>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Mở menu điều hướng"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" aria-label="Điều hướng chính">
+          <a href="index.html">Trang chủ</a>
+          <a href="pages/tu-tuong-yeu-nuoc.html">Tư tưởng yêu nước</a>
+          <a href="pages/hoc-tap.html">Học tập</a>
+          <a href="pages/trai-nghiem.html">Trải nghiệm</a>
+          <a href="pages/y-nghia.html">Ý nghĩa</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero-section">
+        <div class="hero-copy">
+          <div class="hero-copy-inner">
+            <p class="eyebrow">Trang chủ</p>
+            <h1>Nguyễn<br />Sinh Cung</h1>
+            <blockquote>
+              "Hồ Chí Minh, tên khai sinh là Nguyễn Sinh Cung, sinh ngày 19
+              tháng 5 năm 1890 tại Làng Kim Liên. Gia đình Bác có truyền thống
+              hiếu học và yêu nước."
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-inner">
+            <div class="portrait-frame">
+              <img
+                src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1000&q=80"
+                alt="Hình minh họa quê hương và tuổi thơ của Bác Hồ"
+                class="hero-portrait"
+              />
+            </div>
+            <aside class="location-card">
+              <p class="location-label">Quê hương</p>
+              <p>
+                Làng Kim Liên, Nam Đàn, Nghệ An - nơi gắn liền với tuổi thơ giản
+                dị và nền nếp gia đình của Bác.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="family-section" id="family-section">
+        <div class="section-shell">
+          <div class="section-heading">
+            <h2>Gia đình &amp; Tuổi thơ</h2>
+          </div>
+
+          <div class="family-grid">
+            <article class="family-card">
+              <div class="family-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <circle cx="32" cy="22" r="10" />
+                  <path d="M16 48c0-8.8 7.2-16 16-16s16 7.2 16 16" />
+                </svg>
+              </div>
+              <h3>Thân phụ</h3>
+              <p class="family-link">Nguyễn Sinh Sắc (1862 - 1929)</p>
+              <p>
+                Cha của Bác là Nguyễn Sinh Sắc, một nhà nho có tư tưởng tiến bộ
+                và rất thương dân.
+              </p>
+            </article>
+
+            <article class="family-card">
+              <div class="family-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 64 64">
+                  <circle cx="32" cy="22" r="10" />
+                  <path d="M16 48c0-8.8 7.2-16 16-16s16 7.2 16 16" />
+                </svg>
+              </div>
+              <h3>Thân mẫu</h3>
+              <p class="family-link">Hoàng Thị Loan (1868 - 1901)</p>
+              <p>
+                Mẹ của Bác là Hoàng Thị Loan, người phụ nữ hiền hậu và giàu đức
+                hy sinh.
+              </p>
+            </article>
+
+            <aside class="tradition-card">
+              <span class="tradition-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <path d="M7 4h8v5l2.5 2.5L15 14v6H7z" fill="currentColor" />
+                </svg>
+              </span>
+              <h3>Tuổi thơ ở quê hương</h3>
+              <p>
+                Từ nhỏ, Bác đã sống trong môi trường gia đình giàu tình yêu
+                thương và tinh thần yêu nước. Tuổi thơ của Bác gắn liền với cuộc
+                sống giản dị ở quê hương Nghệ An.
+              </p>
+              <a href="#overview-section" class="tradition-link"
+                >Khám phá thêm</a
+              >
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-strip" id="overview-section">
+        <article class="story-panel story-text">
+          <div class="story-inner">
+            <span>01</span>
+            <h3>
+              Làng Kim Liên là không gian đầu tiên nuôi dưỡng nhân cách của Bác.
+            </h3>
+          </div>
+        </article>
+
+        <article class="story-panel story-image">
+          <img
+            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+            alt="Hình minh họa quê hương Kim Liên"
+          />
+        </article>
+
+        <article class="story-panel story-text">
+          <div class="story-inner">
+            <span>02</span>
+            <h3>
+              Trang web này giúp tìm hiểu rõ hơn về thời niên thiếu của Bác, quá
+              trình hình thành tư tưởng yêu nước và những nền tảng tạo nên một
+              vị lãnh tụ vĩ đại của dân tộc Việt Nam.
+            </h3>
+          </div>
+        </article>
+
+        <article class="story-panel story-image">
+          <img
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+            alt="Hình minh họa tuổi thơ giản dị"
+          />
+        </article>
+      </section>
     </main>
 
-    <div id="footer-placeholder"></div>
+    <footer class="site-footer" id="site-footer">
+      <div class="section-shell footer-grid">
+        <section>
+          <h2>The Ho Chi Minh Archive</h2>
+          <p>
+            Không gian lưu trữ giới thiệu về cuộc đời và sự nghiệp của Chủ tịch
+            Hồ Chí Minh
+          </p>
+        </section>
 
-    <div id="image-modal" class="modal">
-        <span class="close-modal">&times;</span>
-        <img class="modal-content" id="expanded-img">
-    </div>
+        <section>
+          <h3>Danh mục</h3>
+          <ul>
+            <li><a href="#top">Trang chủ</a></li>
+            <li><a href="#family-section">Gia đình</a></li>
+            <li><a href="#overview-section">Tuổi thơ</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Nhóm 3 lớp 11A3 Trường THPT Trần Khai Nguyên</h3>
+        </section>
+      </div>
+
+      <p class="footer-note">© 2026 The Ho Chi Minh Archive</p>
+    </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
