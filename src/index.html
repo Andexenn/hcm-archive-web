@@ -16,23 +16,12 @@
     <header class="site-header">
       <div class="site-shell site-header-shell">
         <div class="brand-mark" aria-label="The Ho Chi Minh Archive home">
-          <span class="brand-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-              <path
-                d="M4 7.5h8l3.5 3.5H20v6H9.5L6 13.5H4z"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M7.2 8.8l4.3 4.3"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1.6"
-                stroke-linecap="round"
-              />
-            </svg>
+          <span class="brand-image-shell">
+            <img
+              class="brand-logo"
+              src="https://images.unsplash.com/photo-1573455494060-c5595004fb6c?auto=format&fit=crop&w=200&q=80"
+              alt="Logo The Ho Chi Minh Archive"
+            />
           </span>
           <span class="brand-text">The Ho Chi Minh Archive</span>
         </div>
@@ -41,6 +30,7 @@
           class="menu-toggle"
           type="button"
           aria-label="Mở menu điều hướng"
+          aria-expanded="false"
         >
           <span></span>
           <span></span>
@@ -100,10 +90,11 @@
           <div class="family-grid">
             <article class="family-card">
               <div class="family-placeholder" aria-hidden="true">
-                <svg viewBox="0 0 64 64">
-                  <circle cx="32" cy="22" r="10" />
-                  <path d="M16 48c0-8.8 7.2-16 16-16s16 7.2 16 16" />
-                </svg>
+                <img
+                  class="family-photo"
+                  src="https://tapchivanhoaphatgiao.com/wp-content/uploads/2020/11/h1.png"
+                  alt="Hình minh họa chân dung người cha"
+                />
               </div>
               <h3>Thân phụ</h3>
               <p class="family-link">Nguyễn Sinh Sắc (1862 - 1929)</p>
@@ -115,10 +106,11 @@
 
             <article class="family-card">
               <div class="family-placeholder" aria-hidden="true">
-                <svg viewBox="0 0 64 64">
-                  <circle cx="32" cy="22" r="10" />
-                  <path d="M16 48c0-8.8 7.2-16 16-16s16 7.2 16 16" />
-                </svg>
+                <img
+                  class="family-photo"
+                  src="https://tse2.mm.bing.net/th/id/OIP.FqYDCT3yW_qC27vwjmwPWwHaKH?rs=1&pid=ImgDetMain&o=7&rm=3"
+                  alt="Hình minh họa người mẹ Việt Nam"
+                />
               </div>
               <h3>Thân mẫu</h3>
               <p class="family-link">Hoàng Thị Loan (1868 - 1901)</p>
@@ -149,67 +141,38 @@
       </section>
 
       <section class="story-strip" id="overview-section">
-        <article class="story-panel story-text">
+        <article class="story-panel story-text story-main-content">
           <div class="story-inner">
-            <span>01</span>
             <h3>
-              Làng Kim Liên là không gian đầu tiên nuôi dưỡng nhân cách của Bác.
+              Làng Kim Liên là nơi đã nuôi dưỡng nên phẩm chất và nhân cách của Bác.
             </h3>
           </div>
         </article>
 
         <article class="story-panel story-image">
           <img
-            src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80"
+            src="https://tse3.mm.bing.net/th/id/OIP.RpVUIv9_0O3zSErM8AGFAQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3"
             alt="Hình minh họa quê hương Kim Liên"
           />
         </article>
 
-        <article class="story-panel story-text">
-          <div class="story-inner">
-            <span>02</span>
-            <h3>
-              Trang web này giúp tìm hiểu rõ hơn về thời niên thiếu của Bác, quá
-              trình hình thành tư tưởng yêu nước và những nền tảng tạo nên một
-              vị lãnh tụ vĩ đại của dân tộc Việt Nam.
-            </h3>
-          </div>
+        <article class="story-panel story-image">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.yOI7xTBcIS2irEfmUJT0vwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Hình minh họa thời niên thiếu"
+          />
         </article>
 
         <article class="story-panel story-image">
           <img
-            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
-            alt="Hình minh họa tuổi thơ giản dị"
+            src="https://tse3.mm.bing.net/th/id/OIP.EY3UHCL658YY8zYyI4cDJQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Hình minh họa thế hệ trẻ Việt Nam"
           />
         </article>
       </section>
     </main>
 
-    <footer class="site-footer" id="site-footer">
-      <div class="section-shell footer-grid">
-        <section>
-          <h2>The Ho Chi Minh Archive</h2>
-          <p>
-            Không gian lưu trữ giới thiệu về cuộc đời và sự nghiệp của Chủ tịch
-            Hồ Chí Minh.
-          </p>
-        </section>
-
-        <section>
-          <h3>Danh mục</h3>
-          <ul>
-            <li><a href="#top">Trang chủ</a></li>
-            <li><a href="#family-section">Gia đình</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Nhóm 3 lớp 11A3 Trường THPT Trần Khai Nguyên</h3>
-        </section>
-      </div>
-
-      <p class="footer-note">© 2026 The Ho Chi Minh Archive</p>
-    </footer>
+    <div id="shared-footer" data-footer-src="footer.html"></div>
 
     <script src="scripts.js"></script>
   </body>

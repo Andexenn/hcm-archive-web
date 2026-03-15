@@ -1,18 +1,61 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.querySelector(".menu-toggle");
-  const siteNav = document.querySelector(".site-nav");
+  const sharedFooter = document.getElementById("shared-footer");
 
-  if (!menuToggle || !siteNav) {
-    return;
+  if (sharedFooter) {
+    const footerSrc = sharedFooter.dataset.footerSrc || "footer.html";
+
+    fetch(footerSrc)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load footer");
+        }
+
+        return response.text();
+      })
+      .then((html) => {
+        sharedFooter.innerHTML = html;
+      })
+      .catch(() => {
+        sharedFooter.innerHTML = "";
+      });
   }
 
-  menuToggle.addEventListener("click", () => {
-    siteNav.classList.toggle("is-open");
-  });
+  const headers = document.querySelectorAll(".site-header");
 
-  siteNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
+  headers.forEach((header) => {
+    const menuToggle = header.querySelector(".menu-toggle");
+    const siteNav = header.querySelector(".site-nav");
+
+    if (!menuToggle || !siteNav) {
+      return;
+    }
+
+    const closeMenu = () => {
       siteNav.classList.remove("is-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    };
+
+    menuToggle.setAttribute("aria-expanded", "false");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = siteNav.classList.toggle("is-open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    siteNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!header.contains(event.target)) {
+        closeMenu();
+      }
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.getComputedStyle(menuToggle).display === "none") {
+        closeMenu();
+      }
     });
   });
 });
