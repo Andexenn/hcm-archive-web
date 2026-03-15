@@ -31,6 +31,9 @@ a {
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
   border-bottom: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(8px);
@@ -73,6 +76,7 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: #283046;
+  white-space: nowrap;
   padding-bottom: 4px;
   border-bottom: 2px solid transparent;
 }
@@ -216,5 +220,45 @@ a {
 
   .hero-card img {
     height: 300px;
+  }
+
+  .content-block {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-shell,
+  .page-main,
+  .site-footer {
+    width: min(1200px, calc(100% - 18px));
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+
+  .hero-card {
+    padding: 16px;
+    gap: 18px;
+  }
+
+  .hero-card img {
+    height: 220px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 11vw, 2.9rem);
+    line-height: 1;
+    margin-bottom: 0;
+  }
+
+  .content-block {
+    margin-top: 18px;
+    padding: 18px;
+  }
+
+  .content-block p {
+    font-size: 0.98rem;
   }
 }
